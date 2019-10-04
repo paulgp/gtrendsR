@@ -93,6 +93,7 @@ get_widget <- function(comparison_item, category, gprop, hl, cookie_url, tz) {
   ))
   
   url <- encode_keyword(url)
+    print(url)
   
   # if cookie_handler hasn't been set up, get the requisite cookies from Google's API
   if(!exists("cookie_handler", envir = .pkgenv)){ get_api_cookies(cookie_url) }
